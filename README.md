@@ -1,3 +1,6 @@
+[![Stars](https://img.shields.io/github/stars/andykear/FileMaker-XML-scrubber?style=social)](https://github.com/andykear/FileMaker-XML-scrubber)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-green)](https://creativecommons.org/licenses/by/4.0/)
+
 # FileMaker Second Opinion
 
 A reasoning skill for AI-assisted FileMaker development. Built from production experience. Now released as v1 after months of refining the logic against real work.
