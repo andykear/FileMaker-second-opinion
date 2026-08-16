@@ -1,4 +1,4 @@
-[![Stars](https://img.shields.io/github/stars/andykear/FileMaker-XML-scrubber?style=social)](https://github.com/andykear/FileMaker-XML-scrubber)
+[![Stars](https://img.shields.io/github/stars/andykear/FileMaker-second-opinion?style=social)](https://github.com/andykear/FileMaker-second-opinion)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-green)](https://creativecommons.org/licenses/by/4.0/)
 
 # FileMaker Second Opinion
