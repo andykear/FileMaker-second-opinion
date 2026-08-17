@@ -1,3 +1,7 @@
+---
+name: FileMaker Second Opinion
+description: Corrects modal-answer bias in FileMaker technical drafting. Classifies questions as visible, silent, diagnostic, or context-differential, runs a tail pass to catch amateur-but-plausible answers on silent-class questions, and grounds diagnostic claims against Claris Help before stating them as fact.
+---
 # SKILL.md — FileMaker Second Opinion, v1
 
 Applies to FileMaker technical answers only.
