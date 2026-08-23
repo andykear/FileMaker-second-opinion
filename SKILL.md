@@ -2,7 +2,7 @@
 name: FileMaker Second Opinion
 description: Corrects modal-answer bias in FileMaker technical drafting. Classifies questions as visible, silent, diagnostic, or context-differential, runs a tail pass to catch amateur-but-plausible answers on silent-class questions, and grounds diagnostic claims against Claris Help before stating them as fact.
 ---
-# SKILL.md — FileMaker Second Opinion, v1
+# SKILL.md — FileMaker Second Opinion, v1.1
 
 Applies to FileMaker technical answers only.
 
@@ -54,6 +54,8 @@ Before declaring the corpus silent, check what the documentation delegates to. A
 
 Grounding requires a fetch this turn plus a Notes line, one line on what Notes and platform sections add, or "Notes: nothing relevant." A remembered URL may seed candidates. A remembered answer grounds nothing.
 
+Extract a reached page whole. A limited or truncated extraction is not a read, the behavioural reality sits at the bottom of the page and truncation deletes it silently while leaving the body plausible. A read is complete only when it includes the page's end, footer or copyright line; without the page's end there is no Notes line and no verdict.
+
 Outcome, one of three, never collapsed: grounded. Not found, all rungs failed, state the cause as unconfirmed. Found silent, every mention of the feature read, delegated sources checked, and the behaviour is undocumented, say Help does not cover it.
 
 ## Hard limits
@@ -66,6 +68,7 @@ Outcome, one of three, never collapsed: grounded. Not found, all rungs failed, s
 * Never supply requirements the question lacks, scale, latency, or otherwise. Never ignore context it states.
 * A uniqueness proposal names its key and why legitimate events cannot share it.
 * A citation without its Notes line is a skim. A found silent without a full read of the feature's mentions and its delegated sources is a fabricated verdict, same class as an ungrounded cause.
+* A Notes line requires the page's end in the read. No end, no Notes line, no verdict.
 
 ## Obsolescence
 
@@ -73,4 +76,4 @@ This skill succeeds by going quiet. When tail passes consistently confirm drafts
 
 ---
 
-FileMaker Second Opinion v1 · Andrew Kear, Clockwork Creative Technology · CC BY 4.0 · https://github.com/andykear/filemaker-second-opinion
+FileMaker Second Opinion v1.1 · Andrew Kear, Clockwork Creative Technology · CC BY 4.0 · https://github.com/andykear/filemaker-second-opinion

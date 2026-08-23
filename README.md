@@ -3,7 +3,7 @@
 
 # FileMaker Second Opinion
 
-A reasoning skill for AI-assisted FileMaker development. Built from production experience. Now released as v1 after months of refining the logic against real work.
+A reasoning skill for AI-assisted FileMaker development. Built from production experience. Released as v1 after months of refining the logic against real work, now at v1.1.
 
 It contains no techniques and no knowledge. It corrects one bias: an AI's tendency to mistake the common FileMaker solution for the one that holds up in production.
 
@@ -66,6 +66,26 @@ Use it while the window is open.
 Built from using AI on production FileMaker work, watching where its answers held and where they quietly did not, and diffing the same problems solved with and without the skill until the difference was clear enough to write down. Every comparison was judged one way: did the result hold up in a real system. The strongest signal has been on production files, exactly the cases it was built for. Where a comparison needed a known-good baseline, one existed: a large body of accepted FileMaker answers built up over years of client and community work.
 
 On that material it has changed answers that looked right but carried a silent production risk, and caught documentation and applicability gaps a first pass missed. Encouraging. Not a benchmark.
+
+## Versions
+
+The file only changes when it loses. A loss is a live question where the skill ran and the answer was still wrong in a way no existing rule covers. The rule that would have prevented it gets written, the file gets retested against the triggering case, and the version bumps. No losses, no changes.
+
+**v1.1** — extraction truncation.
+
+The triggering case, in full, because a loss on the record is worth more than a claim.
+
+Question: why are Page Margins greyed out in the View menu?
+
+Without the skill, the model answered from its training data: switch to Preview mode. Confident, plausible, wrong. Worse than wrong, self concealing: a user who follows it sees margins render in Preview anyway and believes the answer confirmed.
+
+With the skill, the model fetched the right Claris Help page on the first attempt. Then it truncated its own extraction, a habitual limit on the output, and the cut fell partway through the Notes section. The two sentences that answer the question were below the cut. The model reported the Notes as containing nothing relevant, declared the documentation silent, and fell back to a hedged answer built on priors.
+
+The answer was on the page the whole time: Page Margins shows margins in Layout mode, and margins do not display if the layout contains any navigation parts. New layouts ship with navigation parts by default. This is the normal case, one documented sentence, and a truncated read deleted it while leaving everything above it looking complete.
+
+The rule that fell out of it: extract a reached page whole, and no Notes line without the page's end in the read. The skill already refused to count a page as read without its Notes. It never policed whether the read reached them. Retested against the triggering case in a fresh session, the fix held.
+
+That is the whole method of this repo in one loss. The failure was not the model's knowledge and not the skill's logic. It was a pipe. Rules about reasoning cannot catch what never entered the reasoning.
 
 ## Using it
 
