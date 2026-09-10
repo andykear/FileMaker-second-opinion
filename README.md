@@ -95,6 +95,9 @@ For Claude Code, copy it into your project as `.claude/skills/second-opinion/SKI
 
 It needs a model that can search and fetch web pages to run the Claris Help grounding. Without that, the classification and challenge passes still work; the documentation discipline does not.
 
+Loading the skill does not guarantee it runs in full on every message. It is guidance the model applies at its own judgement, not a hook that fires every turn, and a grounded lookup costs real tool calls, so a model under time or token pressure can under-invoke it. If a specific question matters enough to be sure the tail pass and the Claris Help grounding actually ran, ask for it directly — "give me a second opinion on this" or "run this through Second Opinion first" both work. Costs nothing extra if the question was visible class anyway.
+
+
 ## The rest of the collection
 
 Second Opinion is the reasoning layer. These are the repos underneath it, all empirically derived through round-trip testing.
