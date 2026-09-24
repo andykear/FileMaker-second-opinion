@@ -100,25 +100,28 @@ Loading the skill does not guarantee it runs in full on every message. It is gui
 
 ## The rest of the collection
 
-Second Opinion is the reasoning layer. These are the repos underneath it, all empirically derived through round-trip testing.
+**[Menu](https://github.com/andykear)**
 
-**[Script XML Skill](https://github.com/andykear/FileMaker-XMLsnippet-Claude-Skill)**
-Makes AI generated scripts paste correctly. Full step ID dictionary and the hidden paste handler rules.
+**Reference skills**
 
-**[Layout XML Skill](https://github.com/andykear/FileMaker-XMLsnippet-Layout-Claude-Skill)**
-Paste ready layout objects. All object types, flags decoded, element order confirmed.
+**[FileMaker Second Opinion](https://github.com/andykear/FileMaker-second-opinion)**\
+**[FileMaker AI Vocabulary](https://github.com/andykear/FileMaker-AI-vocabulary)**
 
-**[Field Definitions](https://github.com/andykear/FileMaker-XML-field-definitions)**
-Field and table definition XML, verified down to auto enter, validation and calculation options.
+**Research / Specialist**
 
-**[XML Inspector](https://github.com/andykear/FileMaker-XML-inspector-open-source)**
-Reads a Save as XML export in the browser. Finds unreferenced fields, broken references, diffs two versions.
+**[FileMaker XML bit-flags](https://github.com/andykear/FileMaker-XML-bit-flags)** (SaXML)\
+**[FileMaker AI Grammar](https://github.com/andykear/FileMaker-AI-grammar)**
 
-**[XML Scrubber](https://github.com/andykear/FileMaker-XML-scrubber)**
-Strips API keys, passwords and internal hostnames from FileMaker XML before you share it with an AI tool.
+**Generation, paste-ready FileMaker XML**
 
-**[AI Vocabulary](https://github.com/andykear/FileMaker-AI-vocabulary)**
-Verified names and internal IDs for FileMaker functions and script steps, so an AI stops inventing them.
+**[Script XML Skill](https://github.com/andykear/FileMaker-XMLsnippet-Claude-Skill)** (XMSS, XMSC, XMFN)\
+**[Layout XML Skill](https://github.com/andykear/FileMaker-XMLsnippet-Layout-Claude-Skill)** (XML2)\
+**[Field, Table & Value List Definitions](https://github.com/andykear/FileMaker-XML-field-definitions)** (XMFD, XMTB, XMVL)
+
+**Analyse a FileMaker solution in your browser**
+
+**[Clockwork Inspector](https://github.com/andykear/FileMaker-XML-inspector-open-source)** (SaXML)\
+**[XML Scrubber](https://github.com/andykear/FileMaker-XML-scrubber)** (SaXML + others)
 
 ## Licence
 
