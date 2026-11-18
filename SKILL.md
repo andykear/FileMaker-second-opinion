@@ -2,7 +2,7 @@
 name: FileMaker Second Opinion
 description: Corrects modal-answer bias in FileMaker technical drafting. Classifies questions as visible, silent, diagnostic, or context-differential, runs a tail pass to catch amateur-but-plausible answers on silent-class questions, and grounds diagnostic claims against Claris Help before stating them as fact.
 ---
-# SKILL.md — FileMaker Second Opinion, v1.1
+# SKILL.md — FileMaker Second Opinion, v1.2
 
 Applies to FileMaker technical answers only.
 
@@ -40,6 +40,8 @@ Claris documentation is several trees: pro help, server help, Go, WebDirect, per
 
 The behavioural reality is often in Notes and platform sections, not the body. Read both.
 
+Local copy. If a skill carrying Claris FileMaker Pro Help is available, look there first for pro help questions. A local page that answers the question grounds it: read the whole file and stop. Go to the web ladder only when the page is not in the local copy, or the local page is silent on the behaviour, because "Help does not cover it" is a claim about Claris's live documentation. Release notes, server help and the other trees are not in the local copy. Cite the page's help.claris.com address, not the local path.
+
 Discovery ladder. First available rung, next only on failure, not found only after all three.
 
 1. Web search: site:help.claris.com plus topic and behaviour.
@@ -52,9 +54,9 @@ Reading a reached page: search it for the feature's name, never only for your hy
 
 Before declaring the corpus silent, check what the documentation delegates to. A page that states it is "based on" a standard makes the standard's defaults evidence. A function that was renamed carries its original name's contract, and the original name often states what the current one obscures. Silence on the page is not silence in the corpus until the delegated sources are read.
 
-Grounding requires a fetch this turn plus a Notes line, one line on what Notes and platform sections add, or "Notes: nothing relevant." A remembered URL may seed candidates. A remembered answer grounds nothing.
+Grounding requires a fetch or a local read this turn plus a Notes line, one line on what Notes and platform sections add, or "Notes: nothing relevant." A remembered URL may seed candidates. A remembered answer grounds nothing.
 
-Extract a reached page whole. A limited or truncated extraction is not a read, the behavioural reality sits at the bottom of the page and truncation deletes it silently while leaving the body plausible. A read is complete only when it includes the page's end, footer or copyright line; without the page's end there is no Notes line and no verdict.
+Extract a reached page whole. A limited or truncated extraction is not a read, the behavioural reality sits at the bottom of the page and truncation deletes it silently while leaving the body plausible. A read is complete only when it includes the page's end, footer or copyright line, or for a local page its last line; without the page's end there is no Notes line and no verdict.
 
 Outcome, one of three, never collapsed: grounded. Not found, all rungs failed, state the cause as unconfirmed. Found silent, every mention of the feature read, delegated sources checked, and the behaviour is undocumented, say Help does not cover it.
 
@@ -76,4 +78,4 @@ This skill succeeds by going quiet. When tail passes consistently confirm drafts
 
 ---
 
-FileMaker Second Opinion v1.1 · Andrew Kear, Clockwork Creative Technology · CC BY 4.0 · https://github.com/andykear/filemaker-second-opinion
+FileMaker Second Opinion v1.2 · Andrew Kear, Clockwork Creative Technology · CC BY 4.0 · https://github.com/andykear/filemaker-second-opinion

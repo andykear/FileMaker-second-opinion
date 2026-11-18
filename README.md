@@ -3,7 +3,7 @@
 
 # FileMaker Second Opinion
 
-A reasoning skill for AI-assisted FileMaker development. Built from production experience. Released as v1 after months of refining the logic against real work, now at v1.1.
+A reasoning skill for AI-assisted FileMaker development. Built from production experience. Released as v1 after months of refining the logic against real work, now at v1.2.
 
 It contains no techniques and no knowledge. It corrects one bias: an AI's tendency to mistake the common FileMaker solution for the one that holds up in production.
 
@@ -71,6 +71,10 @@ On that material it has changed answers that looked right but carried a silent p
 
 The file only changes when it loses. A loss is a live question where the skill ran and the answer was still wrong in a way no existing rule covers. The rule that would have prevented it gets written, the file gets retested against the triggering case, and the version bumps. No losses, no changes.
 
+**v1.2** — local Claris Help.
+
+Where a local copy of FileMaker Pro Help is installed, such as the one Claris's Agentic Development Kit (ADK) provides, the skill reads it first and goes to the web only for what it doesn't have.
+
 **v1.1** — extraction truncation.
 
 The triggering case, in full, because a loss on the record is worth more than a claim.
@@ -93,7 +97,7 @@ The skill is a single file, SKILL.md. Nothing to build, nothing to configure.
 
 For Claude Code, copy it into your project as `.claude/skills/second-opinion/SKILL.md` and it loads automatically. For claude.ai, add it to a Project's knowledge or attach it to a conversation. It works alongside other skills, including the reference repos below, and applies itself only to FileMaker technical work.
 
-It needs a model that can search and fetch web pages to run the Claris Help grounding. Without that, the classification and challenge passes still work; the documentation discipline does not.
+It needs a model that can search and fetch web pages to run the Claris Help grounding. With ADK installed it reads ADK's local copy of FileMaker Pro Help first, which costs fewer tokens, and uses the web only for what that copy doesn't have, such as release notes and server help. Without either, the classification and challenge passes still work; the documentation discipline does not.
 
 Loading the skill does not guarantee it runs in full on every message. It is guidance the model applies at its own judgement, not a hook that fires every turn, and a grounded lookup costs real tool calls, so a model under time or token pressure can under-invoke it. If a specific question matters enough to be sure the tail pass and the Claris Help grounding actually ran, ask for it directly — "give me a second opinion on this" or "run this through Second Opinion first" both work. Costs nothing extra if the question was visible class anyway.
 
